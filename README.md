@@ -31,3 +31,25 @@ Para criar o ÍNDICE foi utilizado o passo a passo que está no Tutorial retirad
 ![image](https://github.com/Marcia520/DIO-Azure-Cognitive-Search/assets/56965551/2cbe0700-e8f0-4dfd-9d6c-ddaec1f56ee2)
 
 ![image](https://github.com/Marcia520/DIO-Azure-Cognitive-Search/assets/56965551/04aef346-7aff-4805-822c-b403fded4496)
+
+## 2. Criar um recurso de serviços de IA do Azure
+
+2.1. Você precisará fornecer um recurso de serviços de IA do Azure que está no mesmo local que seu recurso de Pesquisa de IA do Azure. Sua solução de pesquisa usará esse recurso para enriquecer os dados no data store com insights gerados por IA.
+
+2.2.  Voltar à página inicial do portal do Azure. Clique no+Criar um recursobotão e busca porServiços de IA do Azure( , . e Selecione aCriare aServiços de IA do Azure- Plano. 
+
+2.3.  Você será levado a uma página para criar um recurso de serviços de IA do Azure. 
+
+2.4. Configure-o com as seguintes configurações:
+
+        Assinatura: Sua assinatura do Azure.
+        Grupo de recursos: o mesmo grupo de recursos do seu recurso de Pesquisa de IA do Azure.
+        Região: O mesmo local do seu recurso de Pesquisa de IA do Azure.
+        Nome : Um nome único.
+        Nível de preços : Standard S0
+        Ao marcar esta caixa reconheço que li e entendi todos os termos abaixo : Selecionado
+
+2.5. Selecione Revisão + criar. Depois de ver a resposta Validação Passada, selecione Criar.
+    
+2.6. Aguarde a conclusão da implantação e visualize os detalhes da implantação.
+
