@@ -85,3 +85,79 @@ Para criar o ÍNDICE foi utilizado o passo a passo que está no Tutorial retirad
 
 ![image](https://github.com/Marcia520/DIO-Azure-Cognitive-Search/assets/56965551/43fdda27-2947-4e8a-8666-02ea30b4bf05)
 
+## 4. Carregar documentos para o armazenamento do Azure
+
+4.1. No painel de menus à esquerda, selecione Containers.
+
+4.2. Selecione + Container. Um painel no lado direito abre.
+
+4.3. Insira as seguintes configurações e clique em Criar:
+
+* Nome : coffee-reviews
+* Nível de acesso público: Container (acesso de leitura anônimo para contêineres e blobs)
+* Avançado : sem alterações.
+
+![image](https://github.com/Marcia520/DIO-Azure-Cognitive-Search/assets/56965551/7c4cbfc6-1d29-495e-83a0-a6c3571f685b)
+
+4.4. No portal do Azure, selecione o recipiente de resenhas de café. No contêiner, selecione Upload.
+
+![image](https://github.com/Marcia520/DIO-Azure-Cognitive-Search/assets/56965551/83d69f36-ae8d-4f98-ad4e-e37a0748ea7e)
+
+## 5. Indexação dos documentos
+
+5.1. Depois de armazenar os documentos, você pode usar o Azure AI Search para extrair insights dos documentos. O portal do Azure fornece um assistente de importação de dados. 
+
+5.2. Com este assistente, você pode criar automaticamente um índice e um indexador para fontes de dados suportadas. Você usará o assistente para criar um índice e importar seus documentos de pesquisa do armazenamento para o índice de pesquisa IA do Azure.
+
+5.3. No portal do Azure, navegue até o recurso de pesquisa de IA do Azure. Na página Visão geral, selecione Importar dados.
+
+![image](https://github.com/Marcia520/DIO-Azure-Cognitive-Search/assets/56965551/c58ea6f4-5f68-4610-82a8-65357753f11e)
+
+5.4.Sobre o Conecte-se aos seus dados Página, naFonte de dadoslista, selecioneArmazenamento de Blobs do Azure- A . (í a , , , , , í , Preencha os detalhes do armazenamento de dados com os seguintes valores:
+
+    * Fonte de dados : Armazenamento de Blobs do Azure
+    * Nome da fonte de dados : café-clientista-dados
+    * Dados para extrair : Conteúdo e metadados
+    * Modo de análise : Padrão
+    * Corda de ligação : ?Selecionar Escolher uma ligação existente. Selecione sua conta de armazenamento, selecione o recipiente de revisão de café e clique em Selecionar.
+    * Autenticação de identidade gerenciada: Nenhum
+    * Nome do recipiente: esta definição é auto-preenchida depois de escolher uma ligação existente.
+    * Pastas de blocos: Deixe este espaço em branco.
+    * Avaliações para Fourth Coffee shops.
+    * Selecione Próximo: Adicione habilidades cognitivas (opcional).
+
+![image](https://github.com/Marcia520/DIO-Azure-Cognitive-Search/assets/56965551/c8f34c3c-75dd-4e24-9c6b-bdacd0a2e9a7)
+
+## 6. Importar Dados
+
+6.1. Selecione as projeções do Azure blob: Documento. Uma configuração para o nome do contêiner com o contêiner do conhecimento-loinibe exibe popula-ulado automaticamente. Não altere o nome do container.
+
+6.2. Selecione Avançar: Personalizar o índice de destino. Altere o nome do índice para o índice de café.
+
+6.3. Certifique-se de que a chave está definida como metadata_storage_path. Deixe o Sugerir nome em branco e modo de pesquisa autopopulado.
+
+6.4. Revise as configurações padrão dos campos de índice. Selecione filtrável para todos os campos que já estão selecionados por padrão.
+
+![image](https://github.com/Marcia520/DIO-Azure-Cognitive-Search/assets/56965551/ad905b2f-21ae-4884-8f5a-22af2be4fc23)
+
+![image](https://github.com/Marcia520/DIO-Azure-Cognitive-Search/assets/56965551/83dc0db3-5ccb-4c50-8d00-d66b5b55e405)
+
+![image](https://github.com/Marcia520/DIO-Azure-Cognitive-Search/assets/56965551/3f20e4ff-87e6-49f6-af5d-2b36897752c4)
+
+## 7.Gerenciador de Pesquisa
+
+7.1. Retorne à sua página de recursos de Pesquisa de IA do Azure. No painel esquerdo, em Gerenciamento de Pesquisa, selecione Indexadores. Selecione o recém-criador de café. Aguarde um minuto e seleccione o &orarr; Atualize até que o Status indique o sucesso.
+
+7.2. Selecione o nome do indexador para ver mais detalhes.
+
+
+
+
+
+
+
+
+
+
+
+
