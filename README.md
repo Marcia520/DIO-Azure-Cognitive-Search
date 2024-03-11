@@ -150,6 +150,17 @@ Para criar o ÍNDICE foi utilizado o passo a passo que está no Tutorial retirad
 
 7.2. Selecione o nome do indexador para ver mais detalhes.
 
+![image](https://github.com/Marcia520/DIO-Azure-Cognitive-Search/assets/56965551/d7db0cd0-0241-49b3-90ce-3a585a89e758
+
+7.3. Resultados da Consulta:
+
+![image](https://github.com/Marcia520/DIO-Azure-Cognitive-Search/assets/56965551/06292e8f-ec22-49f9-a35f-e8d83a9b9efe)
+
+# Conclusão
+
+Através das ferramentas da Inteligência Artificial do Azure é possível consultar documentos, fazer pesquisas e buscar depoimentos dos clientes em relação a determinado serviço/produto/lugar, etc, muito importante para a tomada de decisões das empresas.
+
+
 
 
 
